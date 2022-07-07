@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafe Fogusは、横浜市港北区にあるカフェです。身体と心がほぐれるコーヒーを味わってください。">
+    <title>Cafe Fogus</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="image/favicon.png">
+  </head>
+
+<body>
+  <div id="contact">
+    <header>
+      <div class="header-container">
+        <h1>
+          <a href="index.html"><img src="image/cafeicon.png" alt="cafe fogus" class="h1img"></a>
+        </h1>
+        <nav>
+          <ul class="nav-ul">
+            <li class="nav-li" id="nav-li-news"><a href="news.html">NEWS</a></li>
+            <li class="nav-li" id="nav-li-menu"><a href="menu.html">MENU</a></li>
+            <li class="nav-li" id="nav-li-contact"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section>
+        <h2 class="main-copy">Contact</h2>
+      </section>
+    </header>
+    <section class="contact-section">
+      <div class="access-wrapper">
+        <div class="access-box">
+          <div class="vertical">
+            <section class="vertical-box">
+              <h3 class="access-title">アクセス</h3>
+              <ul class="access-content">
+                <li>東急東横線 妙蓮寺駅より徒歩5分</li>
+                <li>住所：横浜市港北区妙蓮寺3-1-2</li>
+                <li>電話：045-000-0000</li>
+                <li>営業時間：11:00 ～ 19:00</li>
+                <li>定休：水曜日</li>
+              </ul>
+            </section>
+            <section class="vertical-box">
+              <h3 class="contact-title">お問い合わせ</h3>
+                <form action="process.php" method="post">
+                  <label>お名前
+                    <input type="text" name="name">
+                  </label>
+                  <label>
+                    メールアドレス<input type="email" name="mail">
+                  </label>
+                  <label>
+                    お問い合わせ内容<textarea name="content"></textarea>
+                  </label>
+                  <button>送信</button>
+                </form>
+            </section>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.138829948604!2d139.63047556492015!3d35.50084524745188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185e944db00557%3A0x44c857960e6324c7!2z44CSMjIyLTAwMTEg56We5aWI5bed55yM5qiq5rWc5biC5riv5YyX5Yy66I-K5ZCN77yR5LiB55uu77yR77yS!5e0!3m2!1sja!2sjp!4v1657223537659!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <small>&copy;2022 Cafe Fogus</small>
+    </footer>
+  </div>
+</body>
+</html>
