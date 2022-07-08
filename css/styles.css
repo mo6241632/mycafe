@@ -131,7 +131,7 @@ h1:hover {
 /* article*/
 #news article {
   padding: 64px 64px 32px;
-  width: 100%;
+  width: 66%;
 }
 
 #news article:last-child{
@@ -141,10 +141,11 @@ h1:hover {
 .column-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .blog {
-  max-width: 66%;
+  width: 66%;
 }
 
 .blog-title-wrapper {
@@ -184,7 +185,13 @@ h1:hover {
 }
 
 .eyecatch {
- width: 688px;
+ max-width: 688px;
+}
+
+.eyecatch > img {
+  max-width: 688px;
+  height: auto;
+  object-fit: contain;
 }
 
 .content {
@@ -346,6 +353,48 @@ button {
 /* レスポンシブ */
 /* *********** */
 
+@media (max-width:1060px) {
+  #news article {
+    padding: 64px 0 0 64px;
+    width: 100%;
+  }
+  
+  #news article:last-child{
+    padding-bottom: 64px;
+  }
+  .column-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #news aside {
+    max-width: 100%;
+  }
+
+  #news h4 {
+    width: fit-content;
+  }
+
+  .sidebar-wrapper {
+    padding: 0 0 64px 32px;
+  }
+
+  .eyecatch {
+    width: 100%;
+  }
+
+  .eyecatch > img {
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}
+
 @media (max-width:600px) {
   .header-container {
     flex-direction: column;
@@ -370,7 +419,7 @@ button {
   }
 
   #news article {
-    padding-left: 32px;
+    padding-left: 64px;
     width: 100%;
   }
   
@@ -387,7 +436,7 @@ button {
   }
 
   .sidebar-wrapper {
-    padding-bottom: 64px;
+    padding: 0 0 64px 32px;
   }
 
   .eyecatch {
